@@ -1,0 +1,210 @@
+body{
+    margin:0;
+    background-color: black;
+}
+header{
+    width: 100%;
+    min-height: 30px;
+    border-top:10px black solid;
+    border-left:30px black solid;
+    position: fixed;
+    z-index: 999;
+}
+.nav{
+    width: 40%;
+    min-width: 30px;
+    display: flex;
+    gap:30px;
+    align-items: center;
+    margin-top: -5px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    border:1px solid rgba(209,213,219,.5);
+    padding:18px 30px 18px 30px;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #ffffff80;
+    box-shadow: 0 3px 20px -5px #00000026;
+    backdrop-filter: blur(10px) saturate(200%);
+
+}
+.nav li{
+    font-size:medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px black solid;
+    padding: 5px 20px;
+    border-radius: 0 0 40px 0;
+    background-color: black;
+    transition: font-size 1s ease;
+}
+.nav a{
+    text-decoration: none;
+    color:black;
+    transition: color 0.5s ease;
+}
+.nav a:hover{
+    color:white
+}
+main{
+    width: 95%;
+    
+    border-left:40px black solid;
+
+}
+
+.content video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.all {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Ensure vertical alignment */
+}
+
+.content {
+    flex: 1; /* Allow the content to take up available space */
+    margin-top: 15px;
+    height: 92vh;
+    width: 70px;
+    background-size: cover;
+    border-radius: 30px 30px 30px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cercle {
+    flex-shrink: 0; /* Prevent the cercle from shrinking */
+    width: 300px;
+    height: 300px;
+    color: white;
+    border: 2px solid;
+    margin: auto 0; /* Center the cercle vertically */
+    border-radius: 50%;
+    font-size: large;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    z-index: 1; /* Make sure the cards are above the text */
+    animation: moveCards 10s linear infinite;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    background-color: #5c54f9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+}
+
+.center-text {
+    position: absolute;
+    z-index: 0; /* Ensure the text is behind the cards */
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.cercle:hover .cards-container {
+    animation-play-state: paused;
+}
+
+@keyframes moveCards {
+    from {
+        transform: translateX(150%);
+    }
+    to {
+        transform: translateX(-150%);
+    }
+}
+
+
+
+.text {
+    margin-top:450px;
+    height:250px;
+    max-width: 40%;
+    min-width: 200px;
+    color:white;
+    align-items:flex-end; 
+    background-color: black;
+    border-radius: 0 30px 0 0;
+    padding: 20px 0 0 30px ;
+}
+.text h1{
+    margin: 0 -10px -10px -10px;
+    font-size:40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text a{
+    text-decoration: none;
+    color:white;
+    border: 1px solid;
+    border-radius: 100%;
+    padding:15px 17px;
+    font-size: large;
+}
+.text p{
+    margin-bottom: 30px;
+}
+.projects{
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+}
+.projects-text{
+    color:#555555;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+.pp{
+    margin:70px 200px;
+}
+
+
+.pname{
+    
+    color:white;
+    padding: 0 20px 20px 20px;
+    border-bottom: 2px solid;
+    font-size: 50px;
+    transition: transform 0.2s ease , box-shadow 0.2s ease;
+}
+.pname:hover{
+    transform: translateX(30px);
+    box-shadow: 0 0px 20px 0px white;
+}
+label{
+    color:darkgray;
+    margin:20px;
+}
+.pp a{
+    text-decoration: none;
+}
