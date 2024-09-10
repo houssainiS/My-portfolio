@@ -35,17 +35,55 @@
                     <a href=""><i class="fa-solid fa-arrow-down"></i></a>
                 </div>
             </div>
-            <div class="cercle">
+            <div class="right">
+                <div class="cercle">
             
                 <div class="cards-container">
+                    <div class="cards">Card 1</div>
+                    <div class="cards">Card 2</div>
+                    <div class="cards">Card 3</div>
+                    <div class="cards">Card 4</div>
+                    <div class="cards">Card 5</div>
+                  </div>
+                  <div class="center-text"><h2>Experiences</h2></div>
+            </div>
+            <div class="slider">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="slider-container">
+                  <div class="slider-wrapper">
                     <div class="card">Card 1</div>
                     <div class="card">Card 2</div>
                     <div class="card">Card 3</div>
                     <div class="card">Card 4</div>
                     <div class="card">Card 5</div>
                   </div>
-                  <div class="center-text"><h2>Experiences</h2></div>
+                </div>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+              </div>
+            
+              <script>
+                let currentIndex = 0;
+            
+            function moveSlide(direction) {
+              const sliderWrapper = document.querySelector('.slider-wrapper');
+              const totalSlides = document.querySelectorAll('.card').length;
+            
+              currentIndex += direction;
+            
+              if (currentIndex < 0) {
+                currentIndex = totalSlides - 1; // go to last slide
+              } else if (currentIndex >= totalSlides) {
+                currentIndex = 0; // go to first slide
+              }
+            
+              const slideWidth = sliderWrapper.querySelector('.card').offsetWidth;
+              sliderWrapper.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
+            }
+            
+              </script>
             </div>
+        </div>
+            
         </div>
 
       
