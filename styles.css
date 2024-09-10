@@ -175,7 +175,11 @@ main{
     .all{
       flex-direction: column;
     }
-    
+    .content{
+        height: 92vh;
+        width: 95%;
+        margin-right: 5px;
+    }
   }
 .text p{
     margin-bottom: 30px;
