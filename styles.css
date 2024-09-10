@@ -171,6 +171,12 @@ main{
     padding:15px 17px;
     font-size: large;
 }
+@media only screen and (max-width: 600px) {
+    .all{
+      flex-direction: column;
+    }
+    
+  }
 .text p{
     margin-bottom: 30px;
 }
