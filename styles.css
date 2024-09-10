@@ -214,9 +214,9 @@ label{
     margin-top: 20px;
 }
 .slider{
-    margin: 20px auto;
+    margin: 20px 0;
     position: relative;
-  width: 80%;
+  width: 300px;
   max-width: 800px;
   overflow: hidden;
 }
