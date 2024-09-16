@@ -321,8 +321,12 @@ label{
   @media only screen and (max-width: 600px) {
    .about-text{
     font-size: x-large;
+    width:80%
    }
     .links{
         display: none;
+    }
+    header{
+        width:80%;
     }
   }
