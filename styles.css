@@ -301,6 +301,7 @@ label{
     object-fit: cover;
     display: block;
     margin-top: 20px;
+    z-index: 5;
   }
   .about-text{
     color:white;
@@ -309,6 +310,7 @@ label{
     font-family: Arial, Helvetica, sans-serif;
     width:60%;
     padding-right: 150px;
+    z-index: 1;
   }
   .linkedin a{
     color: white;
