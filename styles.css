@@ -187,6 +187,8 @@ main{
     margin-top: 50px;
 }
 .titles{
+    margin-top: 10px;
+    margin-bottom: 10px;
     color:#555555;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif
@@ -307,4 +309,18 @@ label{
     font-family: Arial, Helvetica, sans-serif;
     width:60%;
     padding-right: 150px;
+  }
+  .linkedin a{
+    color: white;
+    transition: color 0.5s ease;
+  }
+  .linkedin a:hover{
+    color: gray;
+
+  }
+  @media only screen and (max-width: 600px) {
+   .about-text{
+    font-size: x-large;
+   }
+    
   }
