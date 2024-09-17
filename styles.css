@@ -121,15 +121,42 @@ main{
 }
 
 .cards {
-    width: 100px;
-    height: 150px;
-    background-color: #aa80ff;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    border-radius: 8px;
+  width: 100px;
+  height: 150px;
+  background-color: #aa80ff; /* Fallback color */
+  background-size: cover; /* Make sure the image covers the entire card */
+  background-position: center; /* Center the image */
+  border-radius: 8px;
+}
+
+.cards:nth-child(1) {
+  background-image: url('cards/html.png');
+}
+
+.cards:nth-child(2) {
+  background-image: url('cards/css.png');
+}
+
+.cards:nth-child(3) {
+  background-image: url('cards/js.png');
+}
+
+.cards:nth-child(4) {
+  background-image: url('cards/php.png');
+}
+
+.cards:nth-child(5) {
+  background-image: url('cards/laravel.png');
+}
+
+.cards:nth-child(6) {
+  background-image: url('cards/angular.png');
+}
+.cards:nth-child(7) {
+  background-image: url('cards/nodejs.png');
+}
+.cards:nth-child(8) {
+  background-image: url('cards/sql.png');
 }
 
 .center-text {
