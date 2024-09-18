@@ -438,6 +438,7 @@ label{
     transition: border 0.5s ease, color 0.5s ease;
     right: -70%;
     transform: scale(1.7);
+    max-width:150px;
   }
   
   .email-button:hover {
@@ -498,6 +499,8 @@ label{
         top: 40px;
       flex-direction: column; /* Stack social media icons vertically on small screens */
       gap: 10px;
+      max-width:50px;
+      margin-left: 10px;
     }
   }
   
