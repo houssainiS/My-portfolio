@@ -29,7 +29,7 @@ header{
     display: flex;
     gap: 35px;
     border:1px solid rgba(209,213,219,.5);
-    padding:18px 30px 18px 30px;
+    padding: 25px 35px 25px 35px;
     align-items: center;
     border-radius: 50px;
     background-color: #ffffff80;
@@ -38,7 +38,7 @@ header{
 
 }
 .nav li{
-    font-size:medium;
+    font-size:large;
     font-family: Arial, Helvetica, sans-serif;
 }
 .logo{
@@ -49,6 +49,11 @@ header{
     border-radius: 0 0 40px 0;
     background-color: black;
     transition: font-size 1s ease;
+}
+.logo-img{
+  margin-top: 10px;
+  width:90px;
+  height: 90px;
 }
 .nav a{
     text-decoration: none;
@@ -401,7 +406,7 @@ label{
     color: white;
     font-size: 6rem;
     left: 10%;
-    top: -10%;
+    top: -5%;
     max-width: 60%;
     max-height: 47%;
   }
