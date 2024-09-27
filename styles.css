@@ -100,91 +100,72 @@ main{
 }
 
 .cercle {
-    flex-shrink: 0; /* Prevent the cercle from shrinking */
-    width: 300px;
-    height: 300px;
-    color: white;
-    border: 2px solid;
-    margin: auto 0; /* Center the cercle vertically */
-    border-radius: 50%;
-    font-size: large;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 10px;
+  flex-shrink: 0; /* Prevent the cercle from shrinking */
+  width: 300px;
+  height: 300px;
+  color: white;
+  border: 2px solid;
+  margin: auto; /* Center the cercle vertically */
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.cards-container {
-    display: flex;
-    gap: 20px;
-    position: absolute;
-    z-index: 1; /* Make sure the cards are above the text */
-    animation: moveCards 10s linear infinite;
+.slider-cercle-container {
+  width: 100%; /* Adjust to fit inside the circle */
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cards {
-  width: 100px;
-  height: 150px;
-  background-color: #aa80ff; /* Fallback color */
-  background-size: cover; /* Make sure the image covers the entire card */
-  background-position: center; /* Center the image */
-  border-radius: 8px;
+.slider-cercle {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  height: 100%;
+  user-select: none; /* Prevent text selection */
 }
 
-.cards:nth-child(1) {
-  background-image: url('cards/html.png');
+.slide-cercle {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column; /* Allow content to stack vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+  color: #FFF;
+  font-size: 16px;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  user-select: none; /* Prevent text selection */
 }
 
-.cards:nth-child(2) {
-  background-image: url('cards/css.png');
+.dots-cercle-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
 }
 
-.cards:nth-child(3) {
-  background-image: url('cards/js.png');
+.dot-cercle {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.cards:nth-child(4) {
-  background-image: url('cards/php.png');
+.dot-cercle.active {
+  background-color: #333;
 }
 
-.cards:nth-child(5) {
-  background-image: url('cards/laravel.png');
-}
-
-.cards:nth-child(6) {
-  background-image: url('cards/angular.png');
-}
-.cards:nth-child(7) {
-  background-image: url('cards/nodejs.png');
-}
-.cards:nth-child(8) {
-  background-image: url('cards/sql.png');
-}
-
-.center-text {
-    position: absolute;
-    z-index: 0; /* Ensure the text is behind the cards */
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    color: white;
-}
-
-.cercle:hover .cards-container {
-    animation-play-state: paused;
-}
-
-@keyframes moveCards {
-    from {
-        transform: translateX(150%);
-    }
-    to {
-        transform: translateX(-150%);
-    }
-}
 
 
 
