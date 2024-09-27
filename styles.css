@@ -542,4 +542,21 @@ label{
     }
   }
   
+  /*trying to fix scroll right in the mobile */
+
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.all {
+    width: 100%; /* Set to 100% to prevent overflow */
+    overflow: hidden; /* Hide overflow */
+    box-sizing: border-box;
+}
+
+.nav {
+    max-width: 100%; /* Prevent the navigation from exceeding the viewport */
+}
+/***********************************************************/
   
