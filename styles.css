@@ -463,6 +463,10 @@ label{
   }
   
   @media (max-width: 768px) {
+    *{
+      box-sizing: border-box;
+
+    }
     .content{
 
       min-height:98vh;
@@ -479,8 +483,8 @@ label{
       padding: 20px 0 0 30px ;
   }
     .about-text{
-      width: 22%;
-      max-width: 30%;
+      width:60%;
+      max-width: 60%;
     }
     .contact h1 {
       font-size: 3rem;
@@ -512,7 +516,12 @@ label{
       max-width:50px;
       margin-left: 10px;
     }
-    
+    header{
+      width: 100%;
+    }
+    .slider{
+      margin-bottom: 25px;
+    }
   }
   
   @media (max-width: 480px) {
@@ -543,8 +552,6 @@ label{
   }
   
   /*trying to fix scroll right in the mobile */
-
-
 body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
