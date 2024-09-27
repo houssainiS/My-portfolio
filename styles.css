@@ -568,3 +568,29 @@ body {
 }
 /***********************************************************/
   
+
+/*fade and drop animation : */
+/* Initial state: invisible and above the screen */
+.fade-in {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInDrop 1s ease-out forwards; /* 1 second fade and drop */
+}
+
+@keyframes fadeInDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px); /* Start 30px above */
+  }
+  50%{
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to the final position */
+  }
+}
+
+
+
+/***********************************************/
