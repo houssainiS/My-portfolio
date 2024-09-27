@@ -7,6 +7,10 @@ body{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
+::selection {
+  background-color: #aa80ff; /* Custom background color */
+  color: white; /* Custom text color */
+}
 header{
     width: 100%;
     min-height: 30px;
@@ -590,7 +594,5 @@ body {
     transform: translateY(0); /* Move to the final position */
   }
 }
-
-
 
 /***********************************************/
